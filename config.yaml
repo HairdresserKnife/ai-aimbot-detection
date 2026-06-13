@@ -1,0 +1,53 @@
+window:
+  title: "Counter-Strike 2"
+  roi:
+    enabled: true
+    width: 960
+    height: 960
+
+capture:
+  sizeScale: 1
+
+detector:
+  modelPath: "yolo26n.pt"
+  personClassId: 0
+  scoreThreshold: 0.28
+  imageSize: 768
+  preferGpu: true
+  useHalfPrecision: true
+  minBoxHeightRatio: 0.04
+  excludeBottomRightEnabled: true
+  excludeBottomStartRatio: 0.80
+  excludeRightStartRatio: 0.78
+
+target:
+  headOffsetRatio: 0.3
+  aimOriginOffsetX: 0
+  aimOriginOffsetY: 8
+
+control:
+  mouseScale: 1.35
+  maxStep: 190
+  adaptiveStepNearMaxStep: 20
+  adaptiveStepFarDistancePx: 220.0
+  adaptiveStepCurve: 2.0
+  deadzonePx: 7
+  slowRadiusPx: 115
+  minSlowScale: 0.1
+  moveSleepSec: 0.0
+  clickHoldSec: 0.01
+  loopSleepSec: 0.0
+  autoFire: false
+  boostEnabled: true
+  boostStartPx: 65.0
+  boostMaxScale: 1.8
+
+interface:
+  enabled: true
+  windowName: "Aimbot Detection"
+  maxFps: 75
+  showAimOrigin: false
+
+toggle:
+  virtualKeyCode: 123
+  debounceMs: 180
